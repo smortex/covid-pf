@@ -24,14 +24,16 @@ ARGF.each_line do |line|
 
   if !document['confirmed_case_count'] &&
       document['active_case_count'] &&
-      document['curred_case_count']
-    document['confirmed_case_count'] = document['active_case_count'] + document['curred_case_count']
+      document['curred_case_count'] &&
+      document['death_count']
+    document['confirmed_case_count'] = document['active_case_count'] + document['curred_case_count'] + document['death_count']
   end
 
   if document['confirmed_case_count'] &&
       !document['active_case_count'] &&
-      document['curred_case_count']
-    document['active_case_count'] = document['confirmed_case_count'] - document['curred_case_count']
+      document['curred_case_count'] &&
+      document['death_count']
+    document['active_case_count'] = document['confirmed_case_count'] - document['curred_case_count'] - document['death_count']
   end
 
   puts document.to_json
