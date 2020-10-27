@@ -4,9 +4,11 @@ set -e
 curl -X DELETE 'http://127.0.0.1:9200/covid?pretty'
 curl -X PUT -H 'Content-Type: application/json' 'http://127.0.0.1:9200/covid?pretty' -d '{
   "mappings": {
-    "properties": {
-      "@timestamp": {
-        "type": "date"
+    "_doc": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        }
       }
     }
   }
