@@ -5,6 +5,8 @@ require 'json'
 ARGF.each_line do |line|
   date, suspect_case_count, confirmed_case_count, test_count, hospitalization_count, intensive_care_count, _, death_count, active_case_count, curred_case_count, mean_age, hospitalization_mean_age, source_protocol, source_end = line.split(':')
 
+  next if ['', 'Date'].include?(date)
+
   source = "#{source_protocol}:#{source_end}"
 
   document = {}
