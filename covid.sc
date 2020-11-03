@@ -317,4 +317,16 @@ let H40 = 29
 let I40 = 2391
 let J40 = 4780
 leftstring M40 = "https://www.service-public.pf/dsp/2020/10/28/chiffres-cles-covid-19-281020/"
+leftstring A41 = "2020-11-02"
+let C41 = 8646
+let E41 = 95
+let F41 = 24
+let H41 = 38
+leftstring M41 = "https://www.service-public.pf/dsp/2020/11/02/chiffres-cles-021120/"
+leftstring A42 = "2020-11-03"
+let C42 = 8949
+let E42 = 87
+let F42 = 26
+let H42 = 38
+leftstring M42 = "https://www.service-public.pf/dsp/2020/11/03/chiffres-cles-covid-031120/"
 goto A0 A0
