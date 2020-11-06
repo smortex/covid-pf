@@ -329,4 +329,16 @@ let E42 = 87
 let F42 = 26
 let H42 = 38
 leftstring M42 = "https://www.service-public.pf/dsp/2020/11/03/chiffres-cles-covid-031120/"
+leftstring A43 = "2020-11-04"
+let C43 = 9287
+let E43 = 87
+let F43 = 25
+let H43 = 39
+leftstring M43 = "https://www.service-public.pf/dsp/2020/11/04/chiffres-cles-covid-19-041120/"
+leftstring A44 = "2020-11-05"
+let C44 = 9754
+let E44 = 89
+let F44 = 23
+let H44 = 39
+leftstring M44 = "https://www.service-public.pf/dsp/2020/11/05/chiffres-cles-covid-19-051120/"
 goto A0 A0
