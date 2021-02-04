@@ -3,7 +3,7 @@
 require 'json'
 
 ARGF.each_line do |line|
-  date, suspect_case_count, confirmed_case_count, test_count, hospitalization_count, intensive_care_count, _, death_count, active_case_count, curred_case_count, mean_age, hospitalization_mean_age, vaccinated_count, source_protocol, source_end = line.split(':')
+  date, suspect_case_count, confirmed_case_count, test_count, hospitalization_count, intensive_care_count, _, death_count, active_case_count, curred_case_count, mean_age, hospitalization_mean_age, vaccinated_count, revaccinated_count, source_protocol, source_end = line.split(':')
 
   next if ['', 'Date'].include?(date)
 
@@ -23,6 +23,7 @@ ARGF.each_line do |line|
   document['mean_age'] = mean_age.to_i unless mean_age.empty?
   document['hospitalization_mean_age'] = hospitalization_mean_age.to_i unless hospitalization_mean_age.empty?
   document['vaccinated_count'] = vaccinated_count.to_i unless vaccinated_count.empty?
+  document['revaccinated_count'] = revaccinated_count.to_i unless revaccinated_count.empty?
   document['source'] = source
 
   if !document['confirmed_case_count'] &&
