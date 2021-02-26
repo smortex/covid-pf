@@ -836,4 +836,13 @@ let I117 = 39
 let M117 = 6354
 let N117 = 2453
 leftstring O117 = "https://www.service-public.pf/dsp/2021/02/24/chiffres-cles-covid-19-240221/"
+leftstring A118 = "2021-02-25"
+let C118 = 18379
+let E118 = 9
+let F118 = 5
+let H118 = 139
+let I118 = 36
+let M118 = 6501
+let N118 = 2722
+leftstring O118 = "https://www.service-public.pf/dsp/2021/02/25/chiffres-cles-covid-19-250221/"
 goto A0 A0
