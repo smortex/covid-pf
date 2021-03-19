@@ -962,4 +962,13 @@ let I131 = 50
 let M131 = 14790
 let N131 = 6013
 leftstring O131 = "https://www.service-public.pf/dsp/2021/03/17/chiffres-cles-covid-19-170321/"
+leftstring A132 = "2021-03-18"
+let C132 = 18570
+let E132 = 3
+let F132 = 3
+let H132 = 141
+let I132 = 41
+let M132 = 15636
+let N132 = 6138
+leftstring O132 = "https://www.service-public.pf/dsp/2021/03/18/chiffres-cles-covid-19-180321/"
 goto A0 A0
