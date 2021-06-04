@@ -1385,4 +1385,13 @@ let I178 = 22
 let M178 = 59945
 let N178 = 48869
 leftstring O178 = "https://www.service-public.pf/dsp/2021/06/01/chiffres-cles-covid-19-010621/"
+leftstring A179 = "2021-06-03"
+let C179 = 18884
+let E179 = 2
+let F179 = 1
+let H179 = 142
+let I179 = 23
+let M179 = 61101
+let N179 = 50195
+leftstring O179 = "https://www.service-public.pf/dsp/2021/06/03/chiffres-cles-covid-030621/"
 goto A0 A0
