@@ -1502,4 +1502,13 @@ let I191 = 13
 let M191 = 73914
 let N191 = 64496
 leftstring O191 = "https://www.service-public.pf/dsp/2021/07/05/chiffres-cles-covid-19-050721/"
+leftstring A192 = "2021-07-06"
+let C192 = 19020
+let E192 = 1
+let F192 = 0
+let H192 = 143
+let I192 = 9
+let M192 = 74633
+let N192 = 65124
+leftstring O192 = "https://www.service-public.pf/dsp/2021/07/06/chiffres-cles-covid-19-060721/"
 goto A0 A0
