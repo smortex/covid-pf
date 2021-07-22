@@ -1700,4 +1700,13 @@ let I213 = 117
 let M213 = 80740
 let N213 = 69846
 leftstring O213 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-20-07-21/"
+leftstring A214 = "2021-07-21"
+let C214 = 19195
+let E214 = 8
+let F214 = 3
+let H214 = 144
+let I214 = 138
+let M214 = 81717
+let N214 = 70162
+leftstring O214 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-21-07-21/"
 goto A0 A0
