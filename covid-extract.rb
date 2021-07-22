@@ -2,10 +2,18 @@
 
 require 'json'
 
+confirmed_case_count_offset = 0
+
 ARGF.each_line do |line|
   date, suspect_case_count, confirmed_case_count, test_count, hospitalization_count, intensive_care_count, _, death_count, active_case_count, curred_case_count, mean_age, hospitalization_mean_age, vaccinated_count, revaccinated_count, source_protocol, source_end = line.split(':')
 
   next if ['', 'Date'].include?(date)
+
+  # Starting on 2020-07-15, all previous data is ignored.
+  if date == '---'
+    confirmed_case_count_offset = 62
+    next
+  end
 
   source = "#{source_protocol}:#{source_end}"
 
@@ -13,7 +21,7 @@ ARGF.each_line do |line|
 
   document['@timestamp'] = "#{date}T10:00:00"
   document['suspect_case_count'] = suspect_case_count.to_i unless suspect_case_count.empty?
-  document['confirmed_case_count'] = confirmed_case_count.to_i unless confirmed_case_count.empty?
+  document['confirmed_case_count'] = confirmed_case_count.to_i + confirmed_case_count_offset unless confirmed_case_count.empty?
   document['test_count'] = test_count.to_i unless test_count.empty?
   document['hospitalization_count'] = hospitalization_count.to_i unless hospitalization_count.empty?
   document['intensive_care_count'] = intensive_care_count.to_i unless intensive_care_count.empty?
