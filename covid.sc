@@ -2202,4 +2202,13 @@ let I297 = 521
 let M297 = 86637
 let N297 = 73169
 leftstring O297 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-29-07-21/"
+leftstring A298 = "2021-07-30"
+let C298 = 20048
+let E298 = 40
+let F298 = 8
+let H298 = 149
+let I298 = 739
+let M298 = 87758
+let N298 = 73724
+leftstring O298 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-29-07-21-2/"
 goto A0 A0
