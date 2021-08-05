@@ -2238,4 +2238,13 @@ let I301 = 1563
 let M301 = 93382
 let N301 = 75865
 leftstring O301 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-3-aout-2021-2/"
+leftstring A302 = "2021-08-05"
+let C302 = 21805
+let E302 = 86
+let F302 = 12
+let H302 = 155
+let I302 = 1837
+let M302 = 95083
+let N302 = 76416
+leftstring O302 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-5-aout-2021-2-2/"
 goto A0 A0
