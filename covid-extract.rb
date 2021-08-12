@@ -2,6 +2,8 @@
 
 require 'json'
 
+marker = 0
+
 confirmed_case_count_offset = 0
 
 ARGF.each_line do |line|
@@ -10,8 +12,14 @@ ARGF.each_line do |line|
   next if ['', 'Date'].include?(date)
 
   # Starting on 2020-07-15, all previous data is ignored.
+  # Starting on 2020-11-02, old data is uncluded, but from 2020-03-13 only.
   if date == '---'
-    confirmed_case_count_offset = 62
+    case marker
+    when 0 then confirmed_case_count = 62
+    when 1 then confirmed_case_count = 3
+    else fail('Unexpected marker')
+    end
+    marker += 1
     next
   end
 
