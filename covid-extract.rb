@@ -56,5 +56,9 @@ ARGF.each_line do |line|
     document['active_case_count'] = document['confirmed_case_count'] - document['curred_case_count'] - document['death_count']
   end
 
+  if document['vaccinated_count'] && !document['revaccinated_count']
+    document['revaccinated_count'] = 0
+  end
+
   puts document.to_json
 end
