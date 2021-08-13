@@ -1,19 +1,24 @@
 #!/bin/sh
 set -e
 
-curl -X DELETE 'http://127.0.0.1:9200/covid?pretty'
-curl -X PUT -H 'Content-Type: application/json' 'http://127.0.0.1:9200/covid?pretty' -d '{
+curl_args="--fail --insecure --basic --user admin:admin"
+curl_host="https://127.0.0.1:9200"
+
+if [ -f insert.local ]; then
+	. ./insert.local
+fi
+
+curl $curl_args -X DELETE "${curl_host}/covid?pretty"
+curl $curl_args -X PUT -H 'Content-Type: application/json' "${curl_host}/covid?pretty" -d '{
   "mappings": {
-    "_doc": {
       "properties": {
         "@timestamp": {
           "type": "date"
         }
-      }
     }
   }
 }'
 
 while read line; do
-	echo "$line" | curl -X POST -H 'Content-Type: application/json' -d @- 'http://127.0.0.1:9200/covid/_doc/?pretty'
+	echo "$line" | curl $curl_args -X POST -H 'Content-Type: application/json' -d @- "${curl_host}/covid/_doc/?pretty"
 done

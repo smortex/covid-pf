@@ -1,12 +1,12 @@
 # COVID19 en Polynésie Française
 
-Agrégation des données brutes sur la situation du COVID19 en Polynésie Française et outils d'import dans ElasticSearch.
+Agrégation des données brutes sur la situation du COVID19 en Polynésie Française et outils d'import dans OpenSearch.
 
 ## Contenu du dépôt
 
 * `covid.sc` Feuille de calcul `sc(1)` où les données sont agrégées lorsqu'elles sont publiées;
 * `covid-extract.rb` Script de conversion d'un export texte de la feuille de calcul vers le format [jsonl] (utiliser `T` dans `sc(1)` pour exporter les données au format texte);
-* `insert.sh` Script qui lit des lignes au format [jsonl] (e.g. celles générées par le script ci-dessus) et les insère dans un index ElasticSearch 6 créé (et nettoyé) pour l'occasion.
+* `insert.sh` Script qui lit des lignes au format [jsonl] (e.g. celles générées par le script ci-dessus) et les insère dans un index OpenSearch créé (et nettoyé) pour l'occasion.
 
 Cas d'usage:
 
@@ -17,7 +17,7 @@ romain@zappy ~/covid-pf % ./covid-extract.rb covid.cln | ./insert.sh
 
 ## Usage
 
-Une fois les données dans ElasticSearch, faites ce qui vous plaît, par exemple visualisez les cas actifs avec Timelion:
+Une fois les données dans OpenSearch, faites ce qui vous plaît, par exemple visualisez les cas actifs avec Timelion:
 
 ```
 .es(index=covid,metric=avg:confirmed_case_count).subtract(.es(index=covid,metric=avg:confirmed_case_count,offset="-7d")).points().label("Cas actifs").title("Cas actifs (calculé à partir des cas confirmés)")
