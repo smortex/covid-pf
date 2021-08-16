@@ -5,14 +5,13 @@ Agrégation des données brutes sur la situation du COVID19 en Polynésie Franç
 ## Contenu du dépôt
 
 * `covid.sc` Feuille de calcul `sc(1)` où les données sont agrégées lorsqu'elles sont publiées;
-* `covid-extract.rb` Script de conversion d'un export texte de la feuille de calcul vers le format [jsonl] (utiliser `T` dans `sc(1)` pour exporter les données au format texte);
+* `covid-extract.rb` Script de conversion de la feuille de calcul vers le format [jsonl];
 * `insert.sh` Script qui lit des lignes au format [jsonl] (e.g. celles générées par le script ci-dessus) et les insère dans un index OpenSearch créé (et nettoyé) pour l'occasion.
 
 Cas d'usage:
 
 ```sh-session
-romain@zappy ~/covid-pf % sc covid.sc # Puis 'T<CR>q' pour exporter et quitter
-romain@zappy ~/covid-pf % ./covid-extract.rb covid.cln | ./insert.sh
+romain@zappy ~/covid-pf % ./covid-extract.rb covid.sc | ./insert.sh
 ```
 
 ## Usage

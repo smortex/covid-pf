@@ -2,12 +2,75 @@
 
 require 'json'
 
-marker = 0
+module SpreadSheet
+  class Cell
+    attr_reader :leftstring, :rightstring, :let
+
+    def set(hash = {})
+      @leftstring = hash[:leftstring] if hash.key?(:leftstring)
+      @rightstring = hash[:rightstring] if hash.key?(:rightstring)
+
+      @let = hash[:let] if hash.key?(:let)
+    end
+  end
+
+  class Line
+    attr_reader :cells
+
+    def initialize
+      @cells = []
+    end
+  end
+
+  class Sheet
+    attr_reader :lines
+
+    def initialize
+      @lines = []
+    end
+
+    def self.load(io)
+      sheet = new
+      io.each_line do |line|
+        line.chomp!
+
+        next if line.empty?
+        next if line.match(/^#/)
+
+        if 0 == (/(?<command>leftstring|let|rightstring) (?<position>[A-Z]\d+) = (?<value>.*)/ =~ line)
+          if value.match(/\A".*"\z/)
+            value = value[1...-1]
+          else
+            value = value.to_i
+          end
+          sheet.set(position, command.to_sym => value)
+        end
+      end
+      sheet
+    end
+
+    def set(position, hash)
+      /\A(?<x>[[:alnum:]])(?<y>\d+)\z/ =~ position
+
+      x = x.ord - 'A'.ord
+      y = y.to_i
+
+      lines[y] ||= Line.new
+      lines[y].cells[x] ||= Cell.new
+      lines[y].cells[x].set(hash)
+    end
+  end
+end
+
+sheet = SpreadSheet::Sheet.load(ARGF)
 
 confirmed_case_count_offset = 0
+marker = 0
 
-ARGF.each_line do |line|
-  date, suspect_case_count, confirmed_case_count, test_count, hospitalization_count, intensive_care_count, _, death_count, active_case_count, curred_case_count, mean_age, hospitalization_mean_age, vaccinated_count, revaccinated_count, source_protocol, source_end = line.split(':')
+sheet.lines.each do |line|
+  next unless line
+
+  date, suspect_case_count, confirmed_case_count, test_count, hospitalization_count, intensive_care_count, _, death_count, active_case_count, curred_case_count, mean_age, hospitalization_mean_age, vaccinated_count, revaccinated_count, source_protocol, source_end = line.cells.map { |x| x&.let || x&.rightstring || x&.leftstring }
 
   next if ['', 'Date'].include?(date)
 
@@ -28,31 +91,31 @@ ARGF.each_line do |line|
   document = {}
 
   document['@timestamp'] = "#{date}T10:00:00"
-  document['suspect_case_count'] = suspect_case_count.to_i unless suspect_case_count.empty?
-  document['confirmed_case_count'] = confirmed_case_count.to_i + confirmed_case_count_offset unless confirmed_case_count.empty?
-  document['test_count'] = test_count.to_i unless test_count.empty?
-  document['hospitalization_count'] = hospitalization_count.to_i unless hospitalization_count.empty?
-  document['intensive_care_count'] = intensive_care_count.to_i unless intensive_care_count.empty?
-  document['death_count'] = death_count.to_i unless death_count.empty?
-  document['active_case_count'] = active_case_count.to_i unless active_case_count.empty?
-  document['curred_case_count'] = curred_case_count.to_i unless curred_case_count.empty?
-  document['mean_age'] = mean_age.to_i unless mean_age.empty?
-  document['hospitalization_mean_age'] = hospitalization_mean_age.to_i unless hospitalization_mean_age.empty?
-  document['vaccinated_count'] = vaccinated_count.to_i unless vaccinated_count.empty?
-  document['revaccinated_count'] = revaccinated_count.to_i unless revaccinated_count.empty?
+  document['suspect_case_count'] = suspect_case_count.to_i unless suspect_case_count.nil?
+  document['confirmed_case_count'] = confirmed_case_count.to_i + confirmed_case_count_offset unless confirmed_case_count.nil?
+  document['test_count'] = test_count.to_i unless test_count.nil?
+  document['hospitalization_count'] = hospitalization_count.to_i unless hospitalization_count.nil?
+  document['intensive_care_count'] = intensive_care_count.to_i unless intensive_care_count.nil?
+  document['death_count'] = death_count.to_i unless death_count.nil?
+  document['active_case_count'] = active_case_count.to_i unless active_case_count.nil?
+  document['curred_case_count'] = curred_case_count.to_i unless curred_case_count.nil?
+  document['mean_age'] = mean_age.to_i unless mean_age.nil?
+  document['hospitalization_mean_age'] = hospitalization_mean_age.to_i unless hospitalization_mean_age.nil?
+  document['vaccinated_count'] = vaccinated_count.to_i unless vaccinated_count.nil?
+  document['revaccinated_count'] = revaccinated_count.to_i unless revaccinated_count.nil?
   document['source'] = source
 
   if !document['confirmed_case_count'] &&
-      document['active_case_count'] &&
-      document['curred_case_count'] &&
-      document['death_count']
+     document['active_case_count'] &&
+     document['curred_case_count'] &&
+     document['death_count']
     document['confirmed_case_count'] = document['active_case_count'] + document['curred_case_count'] + document['death_count']
   end
 
   if document['confirmed_case_count'] &&
-      !document['active_case_count'] &&
-      document['curred_case_count'] &&
-      document['death_count']
+     !document['active_case_count'] &&
+     document['curred_case_count'] &&
+     document['death_count']
     document['active_case_count'] = document['confirmed_case_count'] - document['curred_case_count'] - document['death_count']
   end
 
