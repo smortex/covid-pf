@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e
 
 curl_args="--fail --insecure --basic --user admin:admin"
 curl_host="https://127.0.0.1:9200"
@@ -9,6 +8,9 @@ if [ -f insert.local ]; then
 fi
 
 curl $curl_args -X DELETE "${curl_host}/covid?pretty"
+
+set -e
+
 curl $curl_args -X PUT -H 'Content-Type: application/json' "${curl_host}/covid?pretty" -d '{
   "mappings": {
       "properties": {
