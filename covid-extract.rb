@@ -78,8 +78,8 @@ sheet.lines.each do |line|
   # Starting on 2020-11-02, old data is uncluded, but from 2020-03-13 only.
   if date == '---'
     case marker
-    when 0 then confirmed_case_count = 62
-    when 1 then confirmed_case_count = 3
+    when 0 then confirmed_case_count_offset = 62
+    when 1 then confirmed_case_count_offset = 3
     else fail('Unexpected marker')
     end
     marker += 1
