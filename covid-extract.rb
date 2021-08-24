@@ -64,7 +64,7 @@ module SpreadSheet
 end
 
 class CovidDataPoint
-  attr_accessor :date, :suspect_case_count, :confirmed_case_count, :test_count, :hospitalization_count, :intensive_care_count, :death_count, :active_case_count, :curred_case_count, :mean_age, :hospitalization_mean_age, :vaccinated_count, :revaccinated_count, :source
+  attr_accessor :date, :suspect_case_count, :confirmed_case_count, :test_count, :hospitalization_count, :intensive_care_count, :death_count, :active_case_count, :curred_case_count, :mean_age, :hospitalization_mean_age, :vaccinated_count, :revaccinated_count, :source, :new_cases, :r
 
   def initialize(data)
     @date, @suspect_case_count, @confirmed_case_count, @test_count, @hospitalization_count, @intensive_care_count, _, @death_count, @active_case_count, @curred_case_count, @mean_age, @hospitalization_mean_age, @vaccinated_count, @revaccinated_count, source_protocol, source_end = *data
@@ -115,6 +115,8 @@ class CovidDataPoint
       document['revaccinated_count'] = 0
     end
 
+    document['r'] = r if r
+
     document.to_json
   end
 end
@@ -150,6 +152,23 @@ sheet.lines.each do |line|
   data_points[date].confirmed_case_count += confirmed_case_count_offset if data_points[date].confirmed_case_count
 end
 
+data_points.each do |_date, data_point|
+  next unless data_point.confirmed_case_count
+
+  previous_data_point = data_points[data_point.previous_week_date]
+  next unless previous_data_point&.confirmed_case_count
+
+  data_point.new_cases = data_point.confirmed_case_count - previous_data_point.confirmed_case_count
+end
+
+data_points.each do |_date, data_point|
+  next unless data_point.new_cases
+
+  next_data_point = data_points[data_point.next_week_date]
+  next unless next_data_point&.new_cases
+
+  data_point.r = next_data_point.new_cases.to_f / data_point.new_cases if next_data_point && !data_point.new_cases.zero?
+end
 
 data_points.each do |_date, data_point|
   puts data_point.to_json
