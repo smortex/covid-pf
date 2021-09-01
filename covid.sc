@@ -2393,4 +2393,11 @@ let H320 = 423
 let M320 = 137989
 let N320 = 106147
 leftstring O320 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-30-aout-2021/"
+leftstring A321 = "2021-08-31"
+let E321 = 350
+let F321 = 62
+let H321 = 436
+let M321 = 139137
+let N321 = 110895
+leftstring O321 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-31-aout-2021/"
 goto A0 A0
