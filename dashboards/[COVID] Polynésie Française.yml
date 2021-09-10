@@ -1,0 +1,401 @@
+{
+  "version": "1.0.0",
+  "objects": [
+    {
+      "id": "cbd03fc0-f63e-11eb-8fee-fda0e8598985",
+      "type": "dashboard",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-24T03:48:31.618Z",
+      "version": "WzEyMCwyN10=",
+      "attributes": {
+        "title": "[COVID] Polynésie Française",
+        "hits": 0,
+        "description": "",
+        "panelsJSON": "[{\"version\":\"1.0.0\",\"gridData\":{\"x\":0,\"y\":0,\"w\":24,\"h\":15,\"i\":\"4f7922a0-6815-428b-adbd-7f1b8d289fb6\"},\"panelIndex\":\"4f7922a0-6815-428b-adbd-7f1b8d289fb6\",\"embeddableConfig\":{},\"panelRefName\":\"panel_0\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":24,\"y\":0,\"w\":24,\"h\":15,\"i\":\"7ccd5259-28ea-439d-8e3a-1f2a6132e416\"},\"panelIndex\":\"7ccd5259-28ea-439d-8e3a-1f2a6132e416\",\"embeddableConfig\":{},\"panelRefName\":\"panel_1\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":0,\"y\":15,\"w\":24,\"h\":15,\"i\":\"cbe03913-9444-45e5-9a94-04e5ab83f6df\"},\"panelIndex\":\"cbe03913-9444-45e5-9a94-04e5ab83f6df\",\"embeddableConfig\":{},\"panelRefName\":\"panel_2\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":24,\"y\":15,\"w\":24,\"h\":15,\"i\":\"4e96bd63-08c4-4ddf-8a13-c0a364a8baad\"},\"panelIndex\":\"4e96bd63-08c4-4ddf-8a13-c0a364a8baad\",\"embeddableConfig\":{},\"panelRefName\":\"panel_3\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":0,\"y\":30,\"w\":24,\"h\":15,\"i\":\"35f3a8b8-c189-4120-bc1b-77a971e6f8ef\"},\"panelIndex\":\"35f3a8b8-c189-4120-bc1b-77a971e6f8ef\",\"embeddableConfig\":{},\"panelRefName\":\"panel_4\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":24,\"y\":45,\"w\":24,\"h\":15,\"i\":\"516d6cf8-c4c4-4e0e-bbcc-b5fee6a738a5\"},\"panelIndex\":\"516d6cf8-c4c4-4e0e-bbcc-b5fee6a738a5\",\"embeddableConfig\":{},\"panelRefName\":\"panel_5\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":0,\"y\":45,\"w\":24,\"h\":15,\"i\":\"81d69764-f3ea-448b-81fa-7bea396faa9e\"},\"panelIndex\":\"81d69764-f3ea-448b-81fa-7bea396faa9e\",\"embeddableConfig\":{},\"panelRefName\":\"panel_6\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":24,\"y\":30,\"w\":24,\"h\":15,\"i\":\"d9195660-8cb0-435c-af54-f53e4b523c37\"},\"panelIndex\":\"d9195660-8cb0-435c-af54-f53e4b523c37\",\"embeddableConfig\":{},\"panelRefName\":\"panel_7\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":0,\"y\":60,\"w\":24,\"h\":15,\"i\":\"aee52bd2-27ea-4d10-9cbf-c64f155d9daa\"},\"panelIndex\":\"aee52bd2-27ea-4d10-9cbf-c64f155d9daa\",\"embeddableConfig\":{},\"panelRefName\":\"panel_8\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":24,\"y\":60,\"w\":24,\"h\":15,\"i\":\"dd78cf78-d040-4153-a713-1ccabc48c58c\"},\"panelIndex\":\"dd78cf78-d040-4153-a713-1ccabc48c58c\",\"embeddableConfig\":{},\"panelRefName\":\"panel_9\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":0,\"y\":75,\"w\":24,\"h\":15,\"i\":\"3752726b-71b8-4b07-a5a5-b8941388acb9\"},\"panelIndex\":\"3752726b-71b8-4b07-a5a5-b8941388acb9\",\"embeddableConfig\":{},\"panelRefName\":\"panel_10\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":24,\"y\":75,\"w\":24,\"h\":15,\"i\":\"8dc442f0-eafd-4899-863f-77cd4c8e605a\"},\"panelIndex\":\"8dc442f0-eafd-4899-863f-77cd4c8e605a\",\"embeddableConfig\":{},\"panelRefName\":\"panel_11\"},{\"version\":\"1.0.0\",\"gridData\":{\"x\":24,\"y\":90,\"w\":24,\"h\":15,\"i\":\"4c40f1ba-e5b9-4caa-8c0b-f8772b584c5b\"},\"panelIndex\":\"4c40f1ba-e5b9-4caa-8c0b-f8772b584c5b\",\"embeddableConfig\":{},\"panelRefName\":\"panel_12\"}]",
+        "optionsJSON": "{\"hidePanelTitles\":false,\"useMargins\":true}",
+        "version": 1,
+        "timeRestore": true,
+        "timeTo": "now",
+        "timeFrom": "2020-03-01T10:00:00.000Z",
+        "refreshInterval": {
+          "pause": true,
+          "value": 0
+        },
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        }
+      },
+      "references": [
+        {
+          "name": "panel_0",
+          "type": "visualization",
+          "id": "9a53a690-fc87-11eb-9622-731ad89076b5"
+        },
+        {
+          "name": "panel_1",
+          "type": "visualization",
+          "id": "df84b460-fc88-11eb-9622-731ad89076b5"
+        },
+        {
+          "name": "panel_2",
+          "type": "visualization",
+          "id": "3cdbd0d0-fc89-11eb-9622-731ad89076b5"
+        },
+        {
+          "name": "panel_3",
+          "type": "visualization",
+          "id": "95234820-048d-11ec-bc69-61900ab2f3a2"
+        },
+        {
+          "name": "panel_4",
+          "type": "visualization",
+          "id": "61001010-f73a-11eb-9ed3-67da4281f20c"
+        },
+        {
+          "name": "panel_5",
+          "type": "visualization",
+          "id": "cbd17f80-fca5-11eb-9622-731ad89076b5"
+        },
+        {
+          "name": "panel_6",
+          "type": "visualization",
+          "id": "f1c6bac0-f9b2-11eb-9053-e5d90fbcc4ad"
+        },
+        {
+          "name": "panel_7",
+          "type": "visualization",
+          "id": "82830880-046b-11ec-bc69-61900ab2f3a2"
+        },
+        {
+          "name": "panel_8",
+          "type": "visualization",
+          "id": "aa824e60-f992-11eb-9053-e5d90fbcc4ad"
+        },
+        {
+          "name": "panel_9",
+          "type": "visualization",
+          "id": "117cf310-f739-11eb-9ed3-67da4281f20c"
+        },
+        {
+          "name": "panel_10",
+          "type": "visualization",
+          "id": "114b85a0-f964-11eb-ad5b-436015006fa2"
+        },
+        {
+          "name": "panel_11",
+          "type": "visualization",
+          "id": "e42f1360-f937-11eb-a3c2-75b98d131021"
+        },
+        {
+          "name": "panel_12",
+          "type": "visualization",
+          "id": "f0e4b170-f73c-11eb-9ed3-67da4281f20c"
+        }
+      ],
+      "migrationVersion": {
+        "dashboard": "7.9.3"
+      }
+    },
+    {
+      "id": "9a53a690-fc87-11eb-9622-731ad89076b5",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-13T22:59:30.844Z",
+      "version": "WzgxLDZd",
+      "attributes": {
+        "title": "[COVID] Cas confirmés et décès",
+        "visState": "{\"title\":\"[COVID] Cas confirmés et décès\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(202,142,174,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"max\",\"field\":\"confirmed_case_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Cas confirmés\",\"type\":\"timeseries\"},{\"id\":\"5f3b2bf0-fc87-11eb-a211-db2010aa9fd1\",\"color\":\"rgba(231,102,76,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"5f3b5300-fc87-11eb-a211-db2010aa9fd1\",\"type\":\"max\",\"field\":\"death_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Décès\",\"type\":\"timeseries\"}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"log\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"drop_last_bucket\":0,\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "df84b460-fc88-11eb-9622-731ad89076b5",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-21T06:14:47.755Z",
+      "version": "WzEwOSwyNl0=",
+      "attributes": {
+        "title": "[COVID] Cas confirmés",
+        "visState": "{\"title\":\"[COVID] Cas confirmés\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(202,142,174,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"max\",\"field\":\"confirmed_case_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":\"0.4\",\"stacked\":\"none\",\"label\":\"Cas confirmés\",\"type\":\"timeseries\"},{\"id\":\"c0470990-0246-11ec-9566-4d833b2c7396\",\"color\":\"rgba(231,102,76,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"c0470991-0246-11ec-9566-4d833b2c7396\",\"type\":\"max\",\"field\":\"death_count\"}],\"separate_axis\":1,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":\"0\",\"stacked\":\"none\",\"label\":\"Décès\",\"type\":\"timeseries\",\"axis_min\":\"0\"}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"drop_last_bucket\":0,\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "3cdbd0d0-fc89-11eb-9622-731ad89076b5",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-17T04:16:17.302Z",
+      "version": "WzEwMSwxMV0=",
+      "attributes": {
+        "title": "[COVID] Nouveaux cas confirmés et décès",
+        "visState": "{\"title\":\"[COVID] Nouveaux cas confirmés et décès\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"axis_formatter\":\"number\",\"axis_position\":\"left\",\"axis_scale\":\"log\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"drop_last_bucket\":0,\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"index_pattern\":\"\",\"interval\":\"1w\",\"isModelInvalid\":false,\"legend_position\":\"bottom\",\"series\":[{\"axis_position\":\"right\",\"chart_type\":\"bar\",\"color\":\"rgba(202,142,174,1)\",\"fill\":0.5,\"formatter\":\"number\",\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"label\":\"Cas confirmés\",\"line_width\":1,\"metrics\":[{\"field\":\"confirmed_case_count\",\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"max\"},{\"lag\":1,\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"id\":\"bddb6a30-fc87-11eb-a211-db2010aa9fd1\",\"type\":\"serial_diff\"}],\"point_size\":1,\"separate_axis\":0,\"split_color_mode\":\"opensearchDashboards\",\"split_mode\":\"everything\",\"stacked\":\"none\",\"type\":\"timeseries\"},{\"axis_position\":\"right\",\"chart_type\":\"bar\",\"color\":\"rgba(231,102,76,1)\",\"fill\":0.5,\"formatter\":\"number\",\"id\":\"5f3b2bf0-fc87-11eb-a211-db2010aa9fd1\",\"label\":\"Décès\",\"line_width\":1,\"metrics\":[{\"field\":\"death_count\",\"id\":\"5f3b5300-fc87-11eb-a211-db2010aa9fd1\",\"type\":\"max\"},{\"lag\":1,\"alpha\":0.3,\"beta\":0.1,\"field\":\"5f3b5300-fc87-11eb-a211-db2010aa9fd1\",\"gamma\":0.3,\"id\":\"c8baec50-fc87-11eb-a211-db2010aa9fd1\",\"model_type\":\"simple\",\"multiplicative\":true,\"period\":1,\"type\":\"serial_diff\",\"unit\":\"1w\",\"window\":7}],\"point_size\":1,\"separate_axis\":0,\"split_color_mode\":\"opensearchDashboards\",\"split_mode\":\"everything\",\"stacked\":\"none\",\"type\":\"timeseries\"}],\"show_grid\":1,\"show_legend\":1,\"time_field\":\"\",\"tooltip_mode\":\"show_all\",\"type\":\"timeseries\"}}",
+        "uiStateJSON": "{}",
+        "description": "Nouveaux cas confirmés et décès quotidiens",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "95234820-048d-11ec-bc69-61900ab2f3a2",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-24T03:45:26.052Z",
+      "version": "WzExOCwyN10=",
+      "attributes": {
+        "title": "[COVID] Nouveaux cas confirmés et décès (copy)",
+        "visState": "{\"title\":\"[COVID] Nouveaux cas confirmés et décès (copy)\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"axis_formatter\":\"number\",\"axis_position\":\"left\",\"axis_scale\":\"normal\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"drop_last_bucket\":0,\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"index_pattern\":\"\",\"interval\":\"1w\",\"isModelInvalid\":false,\"legend_position\":\"bottom\",\"series\":[{\"axis_position\":\"right\",\"chart_type\":\"bar\",\"color\":\"rgba(202,142,174,1)\",\"fill\":0.5,\"formatter\":\"number\",\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"label\":\"Cas confirmés\",\"line_width\":1,\"metrics\":[{\"field\":\"confirmed_case_count\",\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"max\"},{\"lag\":1,\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"id\":\"bddb6a30-fc87-11eb-a211-db2010aa9fd1\",\"type\":\"serial_diff\"}],\"point_size\":1,\"separate_axis\":0,\"split_color_mode\":\"opensearchDashboards\",\"split_mode\":\"everything\",\"stacked\":\"none\",\"type\":\"timeseries\"},{\"axis_position\":\"right\",\"chart_type\":\"bar\",\"color\":\"rgba(231,102,76,1)\",\"fill\":0.5,\"formatter\":\"number\",\"id\":\"5f3b2bf0-fc87-11eb-a211-db2010aa9fd1\",\"label\":\"Décès\",\"line_width\":1,\"metrics\":[{\"field\":\"death_count\",\"id\":\"5f3b5300-fc87-11eb-a211-db2010aa9fd1\",\"type\":\"max\"},{\"lag\":1,\"alpha\":0.3,\"beta\":0.1,\"field\":\"5f3b5300-fc87-11eb-a211-db2010aa9fd1\",\"gamma\":0.3,\"id\":\"c8baec50-fc87-11eb-a211-db2010aa9fd1\",\"model_type\":\"simple\",\"multiplicative\":true,\"period\":1,\"type\":\"serial_diff\",\"unit\":\"1w\",\"window\":7}],\"point_size\":1,\"separate_axis\":1,\"split_color_mode\":\"opensearchDashboards\",\"split_mode\":\"everything\",\"stacked\":\"none\",\"type\":\"timeseries\"}],\"show_grid\":1,\"show_legend\":1,\"time_field\":\"\",\"tooltip_mode\":\"show_all\",\"type\":\"timeseries\"}}",
+        "uiStateJSON": "{}",
+        "description": "Nouveaux cas confirmés et décès quotidiens",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "61001010-f73a-11eb-9ed3-67da4281f20c",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-17T04:30:33.136Z",
+      "version": "WzEwMiwxMV0=",
+      "attributes": {
+        "title": "[COVID] Cas actifs",
+        "visState": "{\"title\":\"[COVID] Cas actifs\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"axis_formatter\":\"number\",\"axis_position\":\"left\",\"axis_scale\":\"log\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"index_pattern\":\"\",\"interval\":\"1d\",\"isModelInvalid\":false,\"series\":[{\"axis_position\":\"right\",\"chart_type\":\"line\",\"color\":\"rgba(202,142,174,1)\",\"fill\":0.5,\"formatter\":\"number\",\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"label\":\"Cas actifs\",\"line_width\":1,\"metrics\":[{\"field\":\"confirmed_case_count\",\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"max\"},{\"lag\":7,\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"id\":\"c8902ae0-f739-11eb-a2ab-2bea6b29b289\",\"script\":\"\",\"type\":\"serial_diff\",\"unit\":\"\",\"variables\":[{\"field\":\"\",\"id\":\"cdb72320-f739-11eb-a2ab-2bea6b29b289\",\"name\":\"\"}]}],\"point_size\":1,\"separate_axis\":0,\"split_color_mode\":\"opensearchDashboards\",\"split_mode\":\"everything\",\"stacked\":\"none\",\"type\":\"timeseries\"},{\"id\":\"92c31ba0-fc77-11eb-ad85-23ff02672f8a\",\"color\":\"rgba(214,191,87,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"92c342b0-fc77-11eb-ad85-23ff02672f8a\",\"type\":\"avg\",\"field\":\"hospitalization_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Hospitalisations\",\"type\":\"timeseries\"},{\"id\":\"9c477a90-fc77-11eb-ad85-23ff02672f8a\",\"color\":\"rgba(218,139,69,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"9c477a91-fc77-11eb-ad85-23ff02672f8a\",\"type\":\"avg\",\"field\":\"intensive_care_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Soins intensifs\",\"type\":\"timeseries\"}],\"show_grid\":1,\"show_legend\":1,\"time_field\":\"\",\"tooltip_mode\":\"show_all\",\"type\":\"timeseries\",\"legend_position\":\"bottom\",\"background_color_rules\":[{\"id\":\"c9ff37e0-ff13-11eb-8329-09752cc0a0d3\"}],\"drop_last_bucket\":0}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "cbd17f80-fca5-11eb-9622-731ad89076b5",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-14T02:17:38.424Z",
+      "version": "Wzk5LDZd",
+      "attributes": {
+        "title": "[COVID] Population contaminée",
+        "visState": "{\"title\":\"[COVID] Population contaminée\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"metric\",\"series\":[{\"id\":\"776ea2f0-f963-11eb-ad6c-c10e9c5b7415\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"776ea2f1-f963-11eb-ad6c-c10e9c5b7415\",\"type\":\"max\",\"field\":\"confirmed_case_count\"},{\"id\":\"7c87b880-f963-11eb-ad6c-c10e9c5b7415\",\"type\":\"math\",\"variables\":[{\"id\":\"7fc900d0-f963-11eb-ad6c-c10e9c5b7415\",\"name\":\"count\",\"field\":\"776ea2f1-f963-11eb-ad6c-c10e9c5b7415\"}],\"script\":\"100 * params.count / 281674\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Population contaminée\",\"offset_time\":\"\",\"value_template\":\"{{value}} %\"}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"background_color_rules\":[{\"id\":\"48d1ce40-f963-11eb-ad6c-c10e9c5b7415\"}],\"bar_color_rules\":[{\"id\":\"4f1de590-f963-11eb-ad6c-c10e9c5b7415\"}],\"drop_last_bucket\":0,\"gauge_color_rules\":[{\"value\":75,\"id\":\"d4e618a0-f963-11eb-ad6c-c10e9c5b7415\",\"operator\":\"lte\",\"gauge\":\"rgba(255,0,0,1)\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\",\"gauge_max\":\"100\",\"filter\":{\"query\":\"\",\"language\":\"kuery\"},\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "f1c6bac0-f9b2-11eb-9053-e5d90fbcc4ad",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-14T00:09:35.352Z",
+      "version": "WzkzLDZd",
+      "attributes": {
+        "title": "[COVID] Hospitalisations",
+        "visState": "{\"title\":\"[COVID] Hospitalisations\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(214,191,87,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"sigma\":\"\",\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"avg\",\"field\":\"hospitalization_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Hospitalisations\",\"type\":\"timeseries\"},{\"id\":\"14f69490-fc8b-11eb-a211-db2010aa9fd1\",\"color\":\"rgba(214,191,87,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"14f69491-fc8b-11eb-a211-db2010aa9fd1\",\"type\":\"static\",\"value\":\"200\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0\",\"stacked\":\"none\",\"label\":\"Capacité maximale\",\"type\":\"timeseries\",\"hide_in_legend\":1},{\"id\":\"681c6b80-f9b2-11eb-97ef-497f4b82683e\",\"color\":\"rgba(218,139,69,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"681c9290-f9b2-11eb-97ef-497f4b82683e\",\"type\":\"avg\",\"field\":\"intensive_care_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Soins intensifs\",\"type\":\"timeseries\"},{\"id\":\"7fbde590-fc8a-11eb-a211-db2010aa9fd1\",\"color\":\"rgba(218,139,69,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"7fbde591-fc8a-11eb-a211-db2010aa9fd1\",\"type\":\"static\",\"value\":\"24\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0\",\"stacked\":\"none\",\"label\":\"Capacité maximale en soins intensif\",\"type\":\"timeseries\",\"hide_in_legend\":1}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"drop_last_bucket\":0,\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "82830880-046b-11ec-bc69-61900ab2f3a2",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-23T23:45:32.612Z",
+      "version": "WzExNiwyN10=",
+      "attributes": {
+        "title": "[COVID] R effectif",
+        "visState": "{\"title\":\"[COVID] R effectif\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"ae6ef560-0468-11ec-90ad-693088aed17d\",\"color\":\"rgba(84,179,153,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"ae6ef561-0468-11ec-90ad-693088aed17d\",\"type\":\"static\",\"value\":\"1\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.1\",\"stacked\":\"none\",\"label\":\"Re = 1\",\"type\":\"timeseries\",\"hide_in_legend\":1},{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(202,142,174,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"avg\",\"field\":\"r\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":\"\",\"point_size\":\"5\",\"fill\":\"0\",\"stacked\":\"none\",\"label\":\"R effectif\",\"type\":\"timeseries\",\"filter\":{\"query\":\"\",\"language\":\"kuery\"}}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"filter\":{\"query\":\"\",\"language\":\"kuery\"},\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "aa824e60-f992-11eb-9053-e5d90fbcc4ad",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-14T02:14:28.942Z",
+      "version": "Wzk3LDZd",
+      "attributes": {
+        "title": "[COVID] Couverture vaccinale détaillée",
+        "visState": "{\"title\":\"[COVID] Couverture vaccinale détaillée\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"metric\",\"series\":[{\"id\":\"776ea2f0-f963-11eb-ad6c-c10e9c5b7415\",\"color\":\"rgba(84,179,153,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"776ea2f1-f963-11eb-ad6c-c10e9c5b7415\",\"type\":\"max\",\"field\":\"revaccinated_count\"},{\"id\":\"7c87b880-f963-11eb-ad6c-c10e9c5b7415\",\"type\":\"math\",\"variables\":[{\"id\":\"7fc900d0-f963-11eb-ad6c-c10e9c5b7415\",\"name\":\"count\",\"field\":\"776ea2f1-f963-11eb-ad6c-c10e9c5b7415\"}],\"script\":\"100 * params.count / 281674\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Vaccinations complètes\",\"offset_time\":\"\",\"value_template\":\"{{value}} %\"},{\"id\":\"c6547510-f991-11eb-8b8e-d1ce9f3beddf\",\"color\":\"rgba(96,146,192,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"c6547511-f991-11eb-8b8e-d1ce9f3beddf\",\"type\":\"max\",\"field\":\"vaccinated_count\"},{\"id\":\"c6547512-f991-11eb-8b8e-d1ce9f3beddf\",\"type\":\"math\",\"variables\":[{\"id\":\"7fc900d0-f963-11eb-ad6c-c10e9c5b7415\",\"name\":\"v\",\"field\":\"c6547511-f991-11eb-8b8e-d1ce9f3beddf\"}],\"script\":\"100 * params.v / 281674\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Vaccinations partielles\",\"offset_time\":\"\",\"value_template\":\"{{value}} %\",\"filter\":{\"query\":\"\",\"language\":\"kuery\"}}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"background_color_rules\":[{\"id\":\"48d1ce40-f963-11eb-ad6c-c10e9c5b7415\"}],\"bar_color_rules\":[{\"id\":\"4f1de590-f963-11eb-ad6c-c10e9c5b7415\"}],\"drop_last_bucket\":0,\"gauge_color_rules\":[{\"value\":75,\"id\":\"d4e618a0-f963-11eb-ad6c-c10e9c5b7415\",\"operator\":\"lte\",\"gauge\":\"rgba(255,0,0,1)\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\",\"gauge_max\":\"100\",\"filter\":{\"query\":\"\",\"language\":\"kuery\"},\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "117cf310-f739-11eb-9ed3-67da4281f20c",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-13T23:03:26.690Z",
+      "version": "Wzg4LDZd",
+      "attributes": {
+        "title": "[COVID] Mortalité",
+        "visState": "{\"title\":\"[COVID] Mortalité\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"24812f00-f737-11eb-a2ab-2bea6b29b289\",\"color\":\"rgba(231,102,76,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"24812f01-f737-11eb-a2ab-2bea6b29b289\",\"type\":\"max\",\"field\":\"confirmed_case_count\"},{\"id\":\"38182db0-f738-11eb-a2ab-2bea6b29b289\",\"type\":\"max\",\"field\":\"death_count\"},{\"id\":\"749dc250-f737-11eb-a2ab-2bea6b29b289\",\"type\":\"math\",\"variables\":[{\"id\":\"8317f760-f737-11eb-a2ab-2bea6b29b289\",\"name\":\"confirmed\",\"field\":\"24812f01-f737-11eb-a2ab-2bea6b29b289\"},{\"id\":\"435debb0-f738-11eb-a2ab-2bea6b29b289\",\"name\":\"death\",\"field\":\"38182db0-f738-11eb-a2ab-2bea6b29b289\"}],\"script\":\"params.death / params.confirmed * 100\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Mortalité\",\"type\":\"timeseries\",\"hidden\":false,\"value_template\":\"{{value}} %\",\"steps\":0}],\"time_field\":\"@timestamp\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"drop_last_bucket\":0,\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "114b85a0-f964-11eb-ad5b-436015006fa2",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-14T02:14:19.923Z",
+      "version": "Wzk2LDZd",
+      "attributes": {
+        "title": "[COVID] Couverture vaccinale effective",
+        "visState": "{\"title\":\"[COVID] Couverture vaccinale effective\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"metric\",\"series\":[{\"id\":\"776ea2f0-f963-11eb-ad6c-c10e9c5b7415\",\"color\":\"#68BC00\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"776ea2f1-f963-11eb-ad6c-c10e9c5b7415\",\"type\":\"max\",\"field\":\"revaccinated_count\"},{\"id\":\"7c87b880-f963-11eb-ad6c-c10e9c5b7415\",\"type\":\"math\",\"variables\":[{\"id\":\"7fc900d0-f963-11eb-ad6c-c10e9c5b7415\",\"name\":\"count\",\"field\":\"776ea2f1-f963-11eb-ad6c-c10e9c5b7415\"}],\"script\":\"100 * params.count / 281674\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Couverture vaccinale\",\"offset_time\":\"2w\",\"value_template\":\"{{value}} %\"}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"background_color_rules\":[{\"id\":\"48d1ce40-f963-11eb-ad6c-c10e9c5b7415\"}],\"bar_color_rules\":[{\"id\":\"4f1de590-f963-11eb-ad6c-c10e9c5b7415\"}],\"drop_last_bucket\":0,\"gauge_color_rules\":[{\"value\":75,\"id\":\"d4e618a0-f963-11eb-ad6c-c10e9c5b7415\",\"operator\":\"lte\",\"gauge\":\"rgba(255,0,0,1)\"}],\"gauge_width\":10,\"gauge_inner_width\":10,\"gauge_style\":\"half\",\"gauge_max\":\"100\",\"filter\":{\"query\":\"\",\"language\":\"kuery\"},\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "e42f1360-f937-11eb-a3c2-75b98d131021",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-13T23:01:32.383Z",
+      "version": "Wzg0LDZd",
+      "attributes": {
+        "title": "[COVID] Vaccinations",
+        "visState": "{\"title\":\"[COVID] Vaccinations\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(96,146,192,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"max\",\"field\":\"vaccinated_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"1e dose\",\"type\":\"timeseries\"},{\"id\":\"ca2e6dd0-f937-11eb-af6e-c7837775ad07\",\"color\":\"rgba(84,179,153,1)\",\"split_mode\":\"everything\",\"split_color_mode\":\"opensearchDashboards\",\"metrics\":[{\"id\":\"ca2e6dd1-f937-11eb-af6e-c7837775ad07\",\"type\":\"max\",\"field\":\"revaccinated_count\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"2e dose\",\"type\":\"timeseries\"}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"drop_last_bucket\":0,\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    },
+    {
+      "id": "f0e4b170-f73c-11eb-9ed3-67da4281f20c",
+      "type": "visualization",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-08-09T22:52:14.422Z",
+      "version": "WzM4LDNd",
+      "attributes": {
+        "title": "[COVID] Vaccinations en cours",
+        "visState": "{\"title\":\"[COVID] Vaccinations en cours\",\"type\":\"metrics\",\"aggs\":[],\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"cf4e9690-f73a-11eb-a2ab-2bea6b29b289\",\"color\":\"rgba(96,146,192,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"cf4e9691-f73a-11eb-a2ab-2bea6b29b289\",\"type\":\"max\",\"field\":\"vaccinated_count\"},{\"id\":\"dc3b26c0-f73a-11eb-a2ab-2bea6b29b289\",\"type\":\"max\",\"field\":\"revaccinated_count\"},{\"id\":\"e822a300-f73a-11eb-a2ab-2bea6b29b289\",\"type\":\"math\",\"variables\":[{\"id\":\"ea5365b0-f73a-11eb-a2ab-2bea6b29b289\",\"name\":\"p\",\"field\":\"cf4e9691-f73a-11eb-a2ab-2bea6b29b289\"},{\"id\":\"f022fa00-f73a-11eb-a2ab-2bea6b29b289\",\"name\":\"t\",\"field\":\"dc3b26c0-f73a-11eb-a2ab-2bea6b29b289\"}],\"script\":\"params.p - params.t\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"1\",\"fill\":\"0.5\",\"stacked\":\"none\",\"label\":\"Vaccinations en cours\",\"type\":\"timeseries\",\"steps\":0,\"hide_in_legend\":0},{\"id\":\"6f9a33c0-f73b-11eb-a2ab-2bea6b29b289\",\"color\":\"rgba(218,139,69,1)\",\"split_mode\":\"everything\",\"metrics\":[{\"id\":\"6f9a33c1-f73b-11eb-a2ab-2bea6b29b289\",\"type\":\"avg\",\"field\":\"vaccinated_count\"},{\"id\":\"8c1c7b20-f73b-11eb-a2ab-2bea6b29b289\",\"type\":\"static\",\"value\":\"0\"},{\"id\":\"9793a960-f73b-11eb-a2ab-2bea6b29b289\",\"type\":\"math\",\"variables\":[{\"id\":\"9f761820-f73b-11eb-a2ab-2bea6b29b289\",\"name\":\"a\",\"field\":\"6f9a33c1-f73b-11eb-a2ab-2bea6b29b289\"},{\"id\":\"a3452180-f73b-11eb-a2ab-2bea6b29b289\",\"name\":\"s\",\"field\":\"8c1c7b20-f73b-11eb-a2ab-2bea6b29b289\"}],\"script\":\"params.s + params.a\"}],\"separate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"\",\"type\":\"timeseries\",\"filter\":{\"query\":\"NOT revaccinated_count:*\",\"language\":\"kuery\"},\"hide_in_legend\":1,\"offset_time\":\"\"}],\"time_field\":\"\",\"index_pattern\":\"\",\"interval\":\"1d\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"axis_scale\":\"normal\",\"show_legend\":1,\"show_grid\":1,\"tooltip_mode\":\"show_all\",\"default_index_pattern\":\"covid*\",\"default_timefield\":\"@timestamp\",\"isModelInvalid\":false,\"drop_last_bucket\":0,\"legend_position\":\"bottom\"}}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [],
+      "migrationVersion": {
+        "visualization": "7.10.0"
+      }
+    }
+  ]
+}

@@ -6,13 +6,29 @@ Agrégation des données brutes sur la situation du COVID19 en Polynésie Franç
 
 * `covid.sc` Feuille de calcul `sc(1)` où les données sont agrégées lorsqu'elles sont publiées;
 * `covid-extract.rb` Script de conversion de la feuille de calcul vers le format [jsonl];
-* `insert.sh` Script qui lit des lignes au format [jsonl] (e.g. celles générées par le script ci-dessus) et les insère dans un index OpenSearch créé (et nettoyé) pour l'occasion.
+* `insert.sh` Script qui lit des lignes au format [jsonl] (e.g. celles générées par le script ci-dessus) et les insère dans un index OpenSearch créé (et nettoyé) pour l'occasion;
+* `import-dashboard.sh` Script d'import de dashboards dans OpenSearch-Dashboards (il y en a dans le répertoire `dashboards/`).
 
 Cas d'usage:
 
 ```sh-session
 romain@zappy ~/covid-pf % ./covid-extract.rb covid.sc | ./insert.sh
 ```
+
+## Configuration
+
+Le projet assume qu'OpenSearch est installé sur la même machine avec la configuration par défaut.  Pour ajuster cette configuration, créez un fichier `local-config.sh` où vous pouvez surcharger:
+
+Variable | Valeur par défaut
+---------|------------------
+`opensearch_protocol`                 | `https`
+`opensearch_host`                     | `localhost`
+`opensearch_port`                     | `9200`
+`opensearch_curl_args=`               | `--insecure --fail --basic --user admin:admin"`
+`opensearch_dashboards_protocol`      | `http`
+`opensearch_dashboards_host`          | `localhost`
+`opensearch_dashboards_port`          | `5601`
+`opensearch_dashboards_api_curl_args` | `--fail --basic --user admin:admin`
 
 ## Usage
 
