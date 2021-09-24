@@ -2519,4 +2519,11 @@ let H338 = 608
 let M338 = 151840
 let N338 = 137763
 leftstring O338 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-23septembre/"
+leftstring A339 = "2021-09-24"
+let E339 = 97
+let F339 = 30
+let H339 = 611
+let M339 = 152157
+let N339 = 138619
+leftstring O339 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-24septembre/"
 goto A0 A0
