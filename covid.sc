@@ -2568,4 +2568,11 @@ let H345 = 623
 let M345 = 153375
 let N345 = 142669
 leftstring O345 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-4octobre/"
+leftstring A346 = "2021-10-05"
+let E346 = 63
+let F346 = 21
+let H346 = 624
+let M346 = 153575
+let N346 = 143163
+leftstring O346 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-5octobre/"
 goto A0 A0
