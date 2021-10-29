@@ -64,10 +64,10 @@ module SpreadSheet
 end
 
 class CovidDataPoint
-  attr_accessor :date, :suspect_case_count, :confirmed_case_count, :test_count, :hospitalization_count, :intensive_care_count, :death_count, :active_case_count, :curred_case_count, :mean_age, :hospitalization_mean_age, :vaccinated_count, :revaccinated_count, :source, :new_cases, :r
+  attr_accessor :date, :suspect_case_count, :confirmed_case_count, :new_case_count, :test_count, :hospitalization_count, :intensive_care_count, :death_count, :active_case_count, :curred_case_count, :mean_age, :hospitalization_mean_age, :vaccinated_count, :revaccinated_count, :source, :new_cases, :r
 
   def initialize(data)
-    @date, @suspect_case_count, @confirmed_case_count, @test_count, @hospitalization_count, @intensive_care_count, _, @death_count, @active_case_count, @curred_case_count, @mean_age, @hospitalization_mean_age, @vaccinated_count, @revaccinated_count, source_protocol, source_end = *data
+    @date, @suspect_case_count, @confirmed_case_count, @new_case_count, @test_count, @hospitalization_count, @intensive_care_count, _, @death_count, @active_case_count, @curred_case_count, @mean_age, @hospitalization_mean_age, @vaccinated_count, @revaccinated_count, source_protocol, source_end = *data
     @source = "#{source_protocol}:#{source_end}"
   end
 
@@ -124,6 +124,7 @@ end
 sheet = SpreadSheet::Sheet.load(ARGF)
 
 confirmed_case_count_offset = 0
+new_case_count_accumulator = nil
 marker = 0
 
 data_points = {}
@@ -142,6 +143,7 @@ sheet.lines.each do |line|
     case marker
     when 0 then confirmed_case_count_offset = 62
     when 1 then confirmed_case_count_offset = 3
+    when 2 then new_case_count_accumulator = 0
     else fail('Unexpected marker')
     end
     marker += 1
@@ -150,6 +152,11 @@ sheet.lines.each do |line|
 
   data_points[date] = CovidDataPoint.new(data)
   data_points[date].confirmed_case_count += confirmed_case_count_offset if data_points[date].confirmed_case_count
+
+  if new_case_count_accumulator
+    new_case_count_accumulator += data_points[date].new_case_count
+    data_points[date].new_cases = new_case_count_accumulator
+  end
 end
 
 data_points.each do |_date, data_point|
@@ -158,7 +165,7 @@ data_points.each do |_date, data_point|
   previous_data_point = data_points[data_point.previous_week_date]
   next unless previous_data_point&.confirmed_case_count
 
-  data_point.new_cases = data_point.confirmed_case_count - previous_data_point.confirmed_case_count
+  data_point.new_cases ||= data_point.confirmed_case_count - previous_data_point.confirmed_case_count
 end
 
 data_points.each do |_date, data_point|
