@@ -2894,4 +2894,12 @@ let I388 = 636
 let J388 = 10
 let N388 = 165041
 leftstring P388 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-3decembre21/"
+leftstring A389 = "2021-12-06"
+let D389 = 8
+let F389 = 6
+let G389 = 1
+let I389 = 636
+let J389 = 18
+let N389 = 165970
+leftstring P389 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-6decembre21/"
 goto A0 A0
