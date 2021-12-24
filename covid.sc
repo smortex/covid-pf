@@ -2950,4 +2950,12 @@ let I395 = 636
 let J395 = 20
 let N395 = 171686
 leftstring P395 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-21decembre21-2/"
+leftstring A396 = "2021-12-23"
+let D396 = 6
+let F396 = 6
+let G396 = 0
+let I396 = 636
+let J396 = 19
+let N396 = 172177
+leftstring P396 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-21decembre21-2-2/"
 goto A0 A0
