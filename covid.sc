@@ -3206,4 +3206,12 @@ let I427 = 645
 let J427 = 1154
 let N427 = 185913
 leftstring P427 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-11mars22/"
+leftstring A428 = "2022-03-14"
+let D428 = 390
+let F428 = 6
+let G428 = 0
+let I428 = 645
+let J428 = 1079
+let N428 = 185913
+leftstring P428 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-14mars22-2/"
 goto A0 A0
