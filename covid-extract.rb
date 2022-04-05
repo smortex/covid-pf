@@ -143,7 +143,12 @@ sheet.lines.each do |line|
     case marker
     when 0 then confirmed_case_count_offset = 62
     when 1 then confirmed_case_count_offset = 3
-    when 2 then new_case_count_accumulator = 0
+    when 2
+      # Fair guess:
+      #   1. After the missing data, 635 death
+      #   2. Last datapoint has 328 death for 40181 cases: 635 * 40181 / 328 = 77789
+      #   3. Before the skipe 147 death for 19497 cases: 635 * 19497 / 147 = 84221
+      new_case_count_accumulator = 81_005
     else fail('Unexpected marker')
     end
     marker += 1
@@ -155,7 +160,7 @@ sheet.lines.each do |line|
 
   if new_case_count_accumulator
     new_case_count_accumulator += data_points[date].new_case_count
-    data_points[date].new_cases = new_case_count_accumulator
+    data_points[date].confirmed_case_count = new_case_count_accumulator
   end
 end
 
@@ -165,7 +170,7 @@ data_points.each do |_date, data_point|
   previous_data_point = data_points[data_point.previous_week_date]
   next unless previous_data_point&.confirmed_case_count
 
-  data_point.new_cases ||= data_point.confirmed_case_count - previous_data_point.confirmed_case_count
+  data_point.new_cases = data_point.confirmed_case_count - previous_data_point.confirmed_case_count
 end
 
 data_points.each do |_date, data_point|
