@@ -3326,4 +3326,12 @@ let I442 = 648
 let J442 = 91
 let N442 = 186646
 leftstring P442 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-28mars22-2-2/"
+leftstring A443 = "2022-04-22"
+let D443 = 30
+let F443 = 0
+let G443 = 0
+let I443 = 648
+let J443 = 81
+let N443 = 186694
+leftstring P443 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-22avril2022/"
 goto A0 A0
