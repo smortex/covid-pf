@@ -3462,4 +3462,12 @@ let I459 = 649
 let J459 = 50
 let N459 = 188245
 leftstring P459 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-30-mai-2022-2/"
+leftstring A460 = "2022-06-01"
+let D460 = 31
+let F460 = 1
+let G460 = 0
+let I460 = 649
+let J460 = 58
+let N460 = 188245
+leftstring P460 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-1-juin-2022/"
 goto A0 A0
