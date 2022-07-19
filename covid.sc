@@ -3601,4 +3601,11 @@ let G478 = 0
 let I478 = 650
 let J478 = 379
 leftstring P478 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-15-juillet-2022/"
+leftstring A479 = "2022-07-18"
+let D479 = 192
+let F479 = 8
+let G479 = 1
+let I479 = 650
+let J479 = 149
+leftstring P479 = "https://www.presidence.pf/point-de-situation-sur-le-coronavirus-au-18-juillet-2022-2/"
 goto A0 A0
